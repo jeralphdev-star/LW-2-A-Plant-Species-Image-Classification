@@ -55,17 +55,16 @@ A colorful tropical shrub known for its stunning, leathery leaves that display a
 
 </div>
 
+---
 
 
 
-
-### 3. Hippobroma Longiflora
+### 4. Hippobroma Longiflora
 <p align="center">
   <img src="https://github.com/user-attachments/assets/55de5579-4490-48e4-be43-d11db15ccb82" alt="Petunia_Axillaris_27" width="500">
 </p>
 <div align="center">
 
-<div align="center">
 
 **Common name:** Star of Bethlehem, Madamfate, Horse Poison
 
@@ -75,4 +74,41 @@ A colorful tropical shrub known for its stunning, leathery leaves that display a
 A small herbaceous perennial plant with delicate white star-shaped flowers featuring five narrow petals and a yellow center. It grows 1-2 feet tall with slender stems and narrow, lance-shaped leaves with toothed edges. The plant produces attractive white blooms year-round in tropical climates. Despite its beauty, all parts of the plant are highly toxic and contain poisonous latex sap. It's commonly found in disturbed areas, roadsides, and gardens in tropical and subtropical regions. The plant is considered invasive in some areas due to its ability to spread rapidly through seeds.
 
 </div>
+---
+
+### 5.Kaffir Lime Tree
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2981aee8-480c-4b0a-844c-d0bdfc99d784" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Kaffir Lime, Makrut Lime, Thai Lime
+
+**Scientific name:** *Citrus hystrix*
+
+**Description of the plant species:**
+A tropical citrus tree known for its distinctive double-lobed leaves and bumpy, dark green fruit. It typically grows 6-10 feet tall and is widely cultivated for its aromatic leaves and zest, which are essential ingredients in Southeast Asian cuisine, particularly Thai and Indonesian dishes. The leaves have a unique hourglass shape and release a strong, citrusy fragrance when crushed. The fruit has a wrinkled, warty skin and contains little juice but provides intensely flavored zest. The tree thrives in warm, humid climates and is often grown in containers in cooler regions. Both the leaves and fruit rind are prized for their distinctive lime flavor with floral notes.
+
+</div>
+
+---
+
+### 6.Anthurium Jenmanii
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d4dfdab9-ebb0-46a7-8cde-811d2b396bf4" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Birdsnest Anthurium, Strap Leaf Anthurium
+
+**Scientific name:** *Anthurium jenmanii*
+
+**Description of the plant species:**
+A striking tropical plant characterized by its large, elongated, strap-like leaves that grow upward in a rosette formation resembling a bird's nest. The glossy, dark green leaves can reach 2-3 feet in length and have prominent veining. Unlike typical anthuriums with heart-shaped leaves and colorful spathes, this species is grown primarily for its dramatic foliage. It produces small, inconspicuous purple or green flower spikes. The plant thrives in warm, humid environments with bright, indirect light and well-draining soil. It's popular as an ornamental houseplant or in tropical gardens, valued for its architectural appearance and air-purifying qualities.
+
+</div>
+
+---
 

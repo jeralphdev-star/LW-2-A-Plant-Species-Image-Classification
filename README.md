@@ -21,6 +21,7 @@ A compact succulent that forms rosettes of thick, sword-shaped leaves with dark 
 
 </div>
 
+
 ---
 
 ### 2. Hawaiian Sunshine Dracaena
@@ -111,4 +112,105 @@ A striking tropical plant characterized by its large, elongated, strap-like leav
 </div>
 
 ---
+
+### 7.Alternanthera Ficoidea Snow
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f6b6e1a2-9d10-4cf3-b8ea-7cfa24ea0307" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Snow Alternanthera, Joseph's Coat, Calico Plant
+
+**Scientific name:** *Alternanthera ficoidea* 'Snow' (also known as *Alternanthera bettzickiana* 'Snow')
+
+**Description of the plant species:**
+A compact, colorful foliage plant with striking variegated leaves featuring white, cream, and green patterns with occasional pink tinges. The small, oval leaves grow densely on low-growing stems, creating a bushy appearance that typically reaches 6-12 inches in height. This cultivar is particularly prized for its bright, snow-white variegation that adds contrast to gardens and landscapes. It thrives in full sun to partial shade and warm climates, often used as a bedding plant, border edging, or in containers. Regular pruning encourages bushier growth and more vibrant coloration. The plant is heat-tolerant and performs well in tropical and subtropical regions.
+
+</div>
+
+---
+
+
+### 8.Golden Spider Plant
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/68d263f0-2053-46c8-96b3-56da2ea5b9cb" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Golden Spider Plant, Variegated Spider Plant
+
+**Scientific name:** *Chlorophytum comosum* 'Vittatum' or *Chlorophytum comosum* 'Variegatum'
+
+**Description of the plant species:**
+A popular houseplant with long, arching leaves featuring bright yellow or cream stripes down the center with green margins. It grows in a fountain-like clump, typically reaching 12-18 inches in height with leaves that cascade gracefully. The plant produces long stems with small white flowers that develop into baby plantlets (spiderettes), which can be easily propagated. It's one of the easiest indoor plants to grow, thriving in various light conditions from bright indirect light to partial shade. Golden Spider Plant is highly valued for its air-purifying abilities, low maintenance requirements, and attractive variegated foliage that brightens any indoor space.
+
+</div>
+
+---
+
+### 9.Sphagneticola Trilobata
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9c3268ac-b851-4d9d-ae78-5c0fd6f2e05b" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Wedelia, Singapore Daisy, Trailing Daisy, Creeping Oxeye
+
+**Scientific name:** *Sphagneticola trilobata* (formerly *Wedelia trilobata*)
+
+**Description of the plant species:**
+A fast-growing, creeping perennial ground cover with bright yellow daisy-like flowers and glossy, dark green leaves. The leaves are typically three-lobed with serrated edges and grow along trailing stems that can spread rapidly across the ground or climb over structures. The plant produces cheerful yellow flowers year-round in tropical climates, each flower measuring about 1 inch in diameter. It grows vigorously, forming dense mats that can reach 1-2 feet in height. While popular as an ornamental ground cover for erosion control and landscaping, it's considered highly invasive in many tropical and subtropical regions due to its aggressive spreading habit. The plant thrives in full sun to partial shade and tolerates various soil conditions.
+
+</div>
+
+---
+
+### 10.Aspidistra Elatior (cast iron plant)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/37db0d45-1639-4a1b-97e2-c542a0051c6e" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Cast Iron Plant, Bar Room Plant
+
+**Scientific name:** *Aspidistra elatior*
+
+**Description of the plant species:**
+An extremely hardy foliage plant with long, dark green, lance-shaped leaves that grow directly from the soil on individual stems. The glossy leaves can reach 2 feet in length and form dense, upright clumps. True to its common name, the Cast Iron Plant is nearly indestructible and can tolerate neglect, low light, irregular watering, temperature fluctuations, and poor soil conditions. It grows slowly, typically reaching 2-3 feet in height indoors. The plant occasionally produces small, inconspicuous purple flowers at soil level. It's a popular choice for difficult indoor locations, shaded gardens, and beginner plant enthusiasts due to its exceptional tolerance and minimal care requirements.
+
+</div>
+---
+
+
+### 11.Hedera Helix
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/51862dc2-653c-4db7-ac0e-97955fa3193c" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** English Ivy, Common Ivy
+
+**Scientific name:** *Hedera helix*
+
+**Description of the plant species:**
+A versatile evergreen climbing vine with distinctive lobed leaves, typically featuring three to five pointed lobes in a classic ivy shape. The glossy, dark green leaves often display lighter green or white veining, and variegated cultivars are widely available. It can grow as a climbing vine using aerial rootlets to attach to surfaces, or as a trailing ground cover, reaching lengths of 50-100 feet if left unpruned. English Ivy thrives in shade to partial sun and is valued for its ability to cover walls, fences, and trellises. It's popular as both an indoor hanging plant and outdoor ornamental, known for its air-purifying qualities. However, it's considered invasive in many regions due to its aggressive growth and ability to smother native vegetation.
+
+</div>
+---
+
+
+
+
+
+
+
+
+
+
+
 

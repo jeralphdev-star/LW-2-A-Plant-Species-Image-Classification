@@ -79,12 +79,13 @@ A small herbaceous perennial plant with delicate white star-shaped flowers featu
 
 ### 5.Kaffir Lime Tree
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2981aee8-480c-4b0a-844c-d0bdfc99d784" alt="Petunia_Axillaris_27" width="500">
+  <img src="https://github.com/user-attachments/assets/17b93055-4b50-4b3e-92cd-da8dac6dfa54" alt="Petunia_Axillaris_27" width="500">
 </p>
 
 <div align="center">
 
 **Common name:** Kaffir Lime, Makrut Lime, Thai Lime
+
 
 **Scientific name:** *Citrus hystrix*
 
@@ -203,11 +204,155 @@ A versatile evergreen climbing vine with distinctive lobed leaves, typically fea
 </div>
 ---
 
+### 12.Salvia Splendens (scarlet sage)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d6299fb2-ba2a-4309-b13f-33c27ab7dfb6" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Scarlet Sage, Red Salvia
+
+**Scientific name:** *Salvia splendens*
+
+**Description of the plant species:**
+A vibrant flowering plant known for its brilliant red flower spikes that bloom profusely throughout the growing season. The plant features bright green, heart-shaped leaves with serrated edges and grows in an upright, bushy form typically reaching 1-3 feet tall. The tubular flowers are arranged in dense spikes and attract hummingbirds, butterflies, and bees. While red is the most common color, cultivars are available in pink, purple, salmon, and white. Scarlet Sage thrives in full sun to partial shade and prefers warm weather, making it a popular choice for summer bedding displays, borders, and container gardens. Though often grown as an annual in cooler climates, it's a perennial in tropical and subtropical regions.
+
+</div>
+---
+
+### 13.Rhododendron Indicum
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/17593554-818f-41fd-b51f-750d75318767" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Satsuki Azalea, Indian Azalea
+
+**Scientific name:** *Rhododendron indicum*
+
+**Description of the plant species:**
+A compact evergreen flowering shrub renowned for its spectacular spring blooms in shades of pink, red, white, or purple. The plant features small, glossy, dark green leaves and produces funnel-shaped flowers that often cover the entire plant during peak flowering season. It typically grows 2-4 feet tall with a dense, mounded form. Satsuki Azalea is particularly popular in Japanese gardens and bonsai cultivation due to its elegant growth habit and profuse flowering. The plant prefers acidic, well-draining soil and thrives in partial shade with consistent moisture. It's valued for its ornamental beauty, compact size, and ability to be shaped through pruning, making it ideal for small gardens, containers, and landscape borders.
+
+</div>
+
+---
+
+### 14.Tagetes Erecta (African Marigold)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/70b508b4-c1e3-40e8-a92f-cbc6d62357ce" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** African Marigold, Aztec Marigold, Mexican Marigold
+
+**Scientific name:** *Tagetes erecta*
+
+**Description of the plant species:**
+A popular annual flowering plant known for its large, showy pompom-like blooms in vibrant shades of yellow, orange, and gold. The flowers can reach 3-5 inches in diameter and sit atop sturdy, upright stems with dark green, finely divided, aromatic foliage. The plant typically grows 1-4 feet tall depending on the variety, with a bushy, upright habit. African Marigold blooms prolifically from spring through fall and thrives in full sun with well-draining soil. Despite its common name, the plant is native to Mexico and Central America. It's widely used in gardens, borders, and containers for its bright colors and long blooming season. The flowers are also used in traditional celebrations, garlands, and have pest-repelling properties in companion planting.
+
+</div>
+
+---
+
+### 15.Catharanthus Roseus 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/867d046-b5cc-4096-89ca-e6e8bfaf1433" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Madagascar Periwinkle, Vinca, Rosy Periwinkle
+
+**Scientific name:** *Catharanthus roseus*
+
+**Description of the plant species:**
+A compact, bushy flowering plant with glossy, dark green oval leaves and charming five-petaled flowers in shades of pink, white, red, or purple, often with contrasting centers. The plant typically grows 1-2 feet tall with a spreading habit and blooms continuously throughout the warm season. Madagascar Periwinkle is extremely heat and drought-tolerant, thriving in full sun and well-draining soil. It's popular as a bedding plant, border edging, and container plant due to its low maintenance requirements and reliable flowering. Originally from Madagascar, this plant has significant medicinal importance as it contains alkaloids used in cancer treatment medications. It's often grown as an annual in cooler climates but is perennial in tropical and subtropical regions.
+
+</div>
+
+---
 
 
+### 16.Petunia Axillaris
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9876546e-2f98-4eb7-bf9c-4ddf5c973191" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Wild White Petunia, Large White Petunia
+
+**Scientific name:** *Petunia axillaris*
+
+**Description of the plant species:**
+A trailing flowering plant known for its fragrant, large white trumpet-shaped blooms that open in the evening and emit a sweet scent to attract night-flying pollinators. The flowers can reach 2-3 inches in length with five fused petals forming a distinctive tube. The plant features sticky, hairy stems and oval-shaped leaves, growing 1-2 feet tall with a sprawling habit. Native to South America, Petunia axillaris is one of the parent species of modern hybrid garden petunias. It thrives in full sun to partial shade with well-draining soil and blooms prolifically during warm months. The plant is valued for its ornamental appeal, evening fragrance, and historical significance in petunia breeding programs.
+
+</div>
+---
 
 
+### 17.Ageratum Houstonianum
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fe92d73d-1d5c-4392-a185-462d88c32805" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Floss Flower, Blue Mink, Blueweed
+
+**Scientific name:** *Ageratum houstonianum*
+
+**Description of the plant species:**
+A compact annual flowering plant producing fluffy, powder-puff-like flower clusters in shades of blue, purple, pink, or white. The soft, fuzzy blooms are composed of tiny tubular flowers that form dense, rounded heads atop bushy plants. It typically grows 6-18 inches tall with heart-shaped, slightly hairy leaves. Ageratum blooms continuously from spring through fall, thriving in full sun to partial shade with moist, well-draining soil. The plant is popular in borders, edging, containers, and mass plantings due to its long flowering period and attractive color. It's especially valued for providing true blue color in gardens, which is relatively rare among flowering annuals. The flowers attract butterflies and other pollinators while being deer-resistant.
+
+</div>
+---
+
+
+### 18.Opuntia Microdasys
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b3781aa8-73c4-4159-b127-dd30e79fea75" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Bunny Ears Cactus, Angel's Wings, Polka Dot Cactus
+
+**Scientific name:** *Opuntia microdasys*
+
+**Description of the plant species:**
+A distinctive cactus with flat, oval pads that grow in pairs resembling bunny ears. The bright green pads are covered with evenly spaced clusters (areoles) of tiny golden-yellow or white hair-like spines called glochids, creating a polka-dot appearance. The plant typically grows 1-2 feet tall with a branching structure. Despite its cute, fuzzy appearance, the glochids are barbed and can easily detach and irritate skin. It occasionally produces yellow or pale orange flowers in spring, followed by small purple fruits. Bunny Ears Cactus is native to Mexico and thrives in full sun with minimal watering, making it an excellent choice for xeriscaping, rock gardens, and indoor succulent collections. It's popular for its unique ornamental appearance and low maintenance requirements.
+
+</div>
+
+---
+
+### 19.Russelia Equisetiformis 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/31e3e8d1-eedb-4931-a932-e88b525fee24" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+
+<div align="center">
+
+**Common name:** Firecracker Plant, Coral Plant, Fountain Plant
+
+**Scientific name:** *Russelia equisetiformis*
+
+**Description of the plant species:**
+A graceful, cascading shrub with thin, rush-like green stems that create a fountain-like appearance and produce abundant tubular red or coral-colored flowers. The nearly leafless stems are bright green and photosynthetic, giving the plant a delicate, airy texture. It typically grows 3-5 feet tall and wide with an arching, weeping habit. The small, tubular flowers bloom profusely year-round in warm climates, attracting hummingbirds and butterflies. Firecracker Plant thrives in full sun to partial shade with well-draining soil and is highly drought-tolerant once established. It's popular for hanging baskets, containers, borders, and as a cascading accent plant in landscapes. The plant is native to Mexico and is valued for its continuous colorful display and minimal maintenance requirements.
+
+</div>
 
 
 

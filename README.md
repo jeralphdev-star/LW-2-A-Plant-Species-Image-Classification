@@ -54,3 +54,25 @@ A vibrant tropical plant featuring broad, sword-shaped leaves with striking yell
 A colorful tropical shrub known for its stunning, leathery leaves that display a vibrant mix of colors including yellow, orange, red, green, and purple. The leaves vary in shape from broad and oval to narrow and twisted, depending on the variety. It typically grows 3-6 feet tall indoors and is prized as an ornamental plant for its bold, multi-colored foliage. Chinese Croton thrives in bright, indirect light and warm, humid conditions. It requires regular watering and is sensitive to cold temperatures. This eye-catching plant is popular for adding dramatic color to indoor spaces and tropical gardens.
 
 </div>
+
+
+
+
+
+### 3. Hippobroma Longiflora
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/55de5579-4490-48e4-be43-d11db15ccb82" alt="Petunia_Axillaris_27" width="500">
+</p>
+<div align="center">
+
+<div align="center">
+
+**Common name:** Star of Bethlehem, Madamfate, Horse Poison
+
+**Scientific name:** *Hippobroma longiflora* (synonym: *Isotoma longiflora*)
+
+**Description of the plant species:**
+A small herbaceous perennial plant with delicate white star-shaped flowers featuring five narrow petals and a yellow center. It grows 1-2 feet tall with slender stems and narrow, lance-shaped leaves with toothed edges. The plant produces attractive white blooms year-round in tropical climates. Despite its beauty, all parts of the plant are highly toxic and contain poisonous latex sap. It's commonly found in disturbed areas, roadsides, and gardens in tropical and subtropical regions. The plant is considered invasive in some areas due to its ability to spread rapidly through seeds.
+
+</div>
+

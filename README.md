@@ -22,5 +22,20 @@ A compact succulent that forms rosettes of thick, sword-shaped leaves with dark 
 </div>
 
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cdf871c4-8dd0-438e-af74-958626ad6807" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Hawaiian Sunshine Dracaena, Sunshine Dracaena
+
+**Scientific name:** *Dracaena fragrans* 'Hawaiian Sunshine'
+
+**Description of the plant species:**
+A vibrant tropical plant featuring broad, sword-shaped leaves with striking yellow and lime-green striping along the edges and darker green centers. It grows in an upright, compact form, typically reaching 3-4 feet indoors. This cultivar is prized for its bright, cheerful appearance and ability to tolerate low light conditions. It's a popular indoor ornamental plant that's easy to care for, requiring moderate watering and thriving in indirect sunlight. The plant helps purify indoor air and adds a tropical aesthetic to any space.
+
+</div>
+
 
 

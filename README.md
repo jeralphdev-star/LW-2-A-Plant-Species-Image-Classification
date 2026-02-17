@@ -337,7 +337,28 @@ A distinctive cactus with flat, oval pads that grow in pairs resembling bunny ea
 
 ---
 
-### 19.Russelia Equisetiformis 
+
+### 19.Dracaena  Trifasciata Laurentii 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/040c9a92-f391-40b6-88e7-21d1f12e2b96" alt="Petunia_Axillaris_27" width="500">
+</p>
+
+<div align="center">
+
+**Common name:** Variegated Snake Plant, Mother-in-Law's Tongue, Golden-Edged Snake Plant
+
+**Scientific name:** *Dracaena trifasciata* 'Laurentii' (formerly *Sansevieria trifasciata* 'Laurentii')
+
+**Description of the plant species:**
+A striking upright succulent plant featuring tall, sword-shaped leaves with distinctive bright yellow margins bordering dark and light green horizontal banding patterns in the center. The leaves grow stiffly upright and can reach 2-4 feet in height, forming dense clumps over time. This popular cultivar is widely recognized as one of the most resilient and adaptable houseplants available. It thrives in a wide range of light conditions from low light to bright indirect sun and requires minimal watering due to its drought-tolerant nature. Dracaena trifasciata 'Laurentii' is highly valued for its air-purifying qualities, architectural appearance, and virtually indestructible nature. It's an ideal choice for beginner plant enthusiasts and adds a bold, tropical aesthetic to any indoor or outdoor space.
+
+</div>
+
+
+
+
+### 20.Russelia Equisetiformis 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/31e3e8d1-eedb-4931-a932-e88b525fee24" alt="Petunia_Axillaris_27" width="500">

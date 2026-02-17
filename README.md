@@ -5,3 +5,4 @@
 ● Purpose of the image classification model
 
 ##B. Plant Species Section
+![Uploading Petunia_Axillaris_29.jpg…]()

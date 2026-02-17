@@ -262,12 +262,13 @@ A popular annual flowering plant known for its large, showy pompom-like blooms i
 ### 15.Catharanthus Roseus 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/867d046-b5cc-4096-89ca-e6e8bfaf1433" alt="Petunia_Axillaris_27" width="500">
+  <img src="https://github.com/user-attachments/assets/86d0aa618-ff2b-4f86-af9e-f9c9fddd572f" alt="Petunia_Axillaris_27" width="500">
 </p>
 
 <div align="center">
 
 **Common name:** Madagascar Periwinkle, Vinca, Rosy Periwinkle
+
 
 **Scientific name:** *Catharanthus roseus*
 

@@ -9,7 +9,7 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 1. Dwarf Snake Plant
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7c333b0d-e5ad-4fae-8e87-a3a92b9af517" width="350">
+  <img src="https://github.com/user-attachments/assets/21cd50a5-1fb6-4e06-8db3-57a26726d401" width="350">
 </p>
 
 | Field | Details |

@@ -73,10 +73,11 @@ This project builds an image classification model to identify tropical and ornam
 
 ---
 
-### 6. Birdsnest Anthurium
+### 6. Anthurium Jenmanii
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d4dfdab9-ebb0-46a7-8cde-811d2b396bf4" width="350">
+  <img src="https://github.com/user-attachments/assets/5aa68741-c7bf-4788-a3b2-9cdd08ff9422" width="350">
 </p>
+
 
 | Field | Details |
 |---|---|
@@ -88,7 +89,7 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 7. Snow Alternanthera
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f6b6e1a2-9d10-4cf3-b8ea-7cfa24ea0307" width="350">
+  <img src="https://github.com/user-attachments/assets/c28e66fa-36b2-47ad-bf64-fff7c325c305" width="350">
 </p>
 
 | Field | Details |
@@ -101,7 +102,7 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 8. Golden Spider Plant
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/68d263f0-2053-46c8-96b3-56da2ea5b9cb" width="350">
+  <img src="https://github.com/user-attachments/assets/aab6d252-8a76-43b4-bf0b-9f21a6314401" width="350">
 </p>
 
 | Field | Details |
@@ -114,7 +115,7 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 9. Wedelia (Singapore Daisy)
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9c3268ac-b851-4d9d-ae78-5c0fd6f2e05b" width="350">
+  <img src="https://github.com/user-attachments/assets/c19d3fe7-4e22-469c-8761-f6126c21801c" width="350">
 </p>
 
 | Field | Details |
@@ -127,7 +128,7 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 10. Cast Iron Plant
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/37db0d45-1639-4a1b-97e2-c542a0051c6e" width="350">
+  <img src="https://github.com/user-attachments/assets/5dd48edd-5b47-42c6-bc71-755ceeffdce0" width="350">
 </p>
 
 | Field | Details |
@@ -136,11 +137,12 @@ This project builds an image classification model to identify tropical and ornam
 | **Scientific Name** | *Aspidistra elatior* |
 | **Description** | A nearly indestructible foliage plant with tall glossy dark-green leaves, thriving in deep shade and neglect that would kill most houseplants. |
 
+
 ---
 
-### 11. English Ivy
+### 11. Hedera helix
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/51862dc2-653c-4db7-ac0e-97955fa3193c" width="350">
+  <img src="https://github.com/user-attachments/assets/54e96094-774b-4d41-9d49-7d6491cc25b5" width="350">
 </p>
 
 | Field | Details |
@@ -153,7 +155,7 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 12. Scarlet Sage
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d6299fb2-ba2a-4309-b13f-33c27ab7dfb6" width="350">
+  <img src="https://github.com/user-attachments/assets/d260b45b-900c-40e6-92d1-6cac6771c875" width="350">
 </p>
 
 | Field | Details |
@@ -164,9 +166,10 @@ This project builds an image classification model to identify tropical and ornam
 
 ---
 
+
 ### 13. Satsuki Azalea
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/17593554-818f-41fd-b51f-750d75318767" width="350">
+  <img src="https://github.com/user-attachments/assets/fd1025ed-088a-4f2d-be01-b286f4828669" width="350">
 </p>
 
 | Field | Details |
@@ -179,7 +182,7 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 14. African Marigold
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/70b508b4-c1e3-40e8-a92f-cbc6d62357ce" width="350">
+  <img src="https://github.com/user-attachments/assets/326f0742-782d-4e4f-8c13-1caac92217ae" width="350">
 </p>
 
 | Field | Details |
@@ -192,8 +195,9 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 15. Madagascar Periwinkle
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/28392642-5d68-4147-b96b-604fb22369f7" width="350">
+  <img src="https://github.com/user-attachments/assets/5cd1aa0c-6af6-4d3b-a82c-42da92503850" width="350">
 </p>
+
 
 | Field | Details |
 |---|---|
@@ -205,8 +209,9 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 16. Wild White Petunia
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9876546e-2f98-4eb7-bf9c-4ddf5c973191" width="350">
+  <img src="https://github.com/user-attachments/assets/829198a8-add9-4de4-b390-119893626bfb" width="350">
 </p>
+
 
 | Field | Details |
 |---|---|
@@ -216,9 +221,10 @@ This project builds an image classification model to identify tropical and ornam
 
 ---
 
+
 ### 17. Floss Flower
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/fe92d73d-1d5c-4392-a185-462d88c32805" width="350">
+  <img src="https://github.com/user-attachments/assets/c900f8b6-c05e-4c76-82f4-e62c675c0e75" width="350">
 </p>
 
 | Field | Details |
@@ -231,8 +237,8 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 18. Bunny Ears Cactus
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b3781aa8-73c4-4159-b127-dd30e79fea75" width="350">
-</p>
+  <img src="https://github.com/user-attachments/assets/5d97471a-c9c2-4455-a19c-cb4083d1181f" width="350">
+
 
 | Field | Details |
 |---|---|
@@ -244,8 +250,9 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 19. Variegated Snake Plant
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/040c9a92-f391-40b6-88e7-21d1f12e2b96" width="350">
+  <img src="https://github.com/user-attachments/assets/466e7ff2-2a49-45ac-a530-b538c539a40d" width="350">
 </p>
+
 
 | Field | Details |
 |---|---|
@@ -257,8 +264,9 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 20. Firecracker Plant
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/31e3e8d1-eedb-4931-a932-e88b525fee24" width="350">
+  <img src="https://github.com/user-attachments/assets/7930b038-0bc7-43dd-95c3-ca366ff606a3" width="350">
 </p>
+
 
 | Field | Details |
 |---|---|

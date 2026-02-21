@@ -1,384 +1,426 @@
-# LW-2-A-Plant-Species-Image-Classification
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LW-2-A — Plant Species Image Classification</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
-##A. Project Overview
-● Brief description of the project
-● Purpose of the image classification model
+  body {
+    background: #ffffff;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+  }
 
-##B. Plant Species Section
+  /* ── HEADER ── */
+  .header {
+    border-bottom: 1px solid #e8e8e8;
+    padding: 56px 64px 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header-tag {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #3a7d44;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  .header h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 600;
+    color: #111;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #777;
+    font-size: 0.95rem;
+    max-width: 520px;
+    line-height: 1.7;
+  }
+  .header-meta {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+  .meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .meta-val {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    color: #3a7d44;
+    font-weight: 600;
+  }
+  .meta-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #aaa;
+  }
 
-### 1. Dwarf Snake Plant
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/7c333b0d-e5ad-4fae-8e87-a3a92b9af517" alt="Petunia_Axillaris_27" width="500">
-</p>
-<div align="center">
+  /* ── SECTION TITLE ── */
+  .section-title {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 64px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .section-title h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: #999;
+    white-space: nowrap;
+  }
+  .section-title hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ebebeb;
+  }
 
-**Common name:** Dwarf Snake Plant, Bird's Nest Snake Plant
+  /* ── GRID ── */
+  .grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 64px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+  }
 
-**Scientific name:** *Sansevieria trifasciata* 'Hahnii' (also known as *Dracaena trifasciata* 'Hahnii')
+  /* ── CARD ── */
+  .card {
+    border: 1px solid #ebebeb;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+  }
+  .card:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+  }
+  .card-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #f7f7f7;
+  }
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  .card:hover .card-img img { transform: scale(1.05); }
 
-**Description of the plant species:**
-A compact succulent that forms rosettes of thick, sword-shaped leaves with dark green coloring and lighter horizontal bands. It grows only 6-8 inches tall in a distinctive spiral "bird's nest" pattern. This hardy, low-maintenance plant is drought-tolerant, thrives in low light, and is popular for indoor decoration due to its air-purifying qualities and ability to survive with minimal care.
+  .card-body { padding: 18px 20px 22px; }
+  .card-num {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #3a7d44;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .card-common {
+    font-family: 'Lora', serif;
+    font-size: 1.05rem;
+    color: #111;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 3px;
+  }
+  .card-sci {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 0.77rem;
+    color: #bbb;
+    margin-bottom: 12px;
+  }
+  .divider-line {
+    height: 1px;
+    background: #f0f0f0;
+    margin-bottom: 12px;
+  }
+  .card-desc {
+    font-size: 0.83rem;
+    color: #666;
+    line-height: 1.65;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid #e8e8e8;
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 0.78rem;
+    color: #ccc;
+    letter-spacing: 0.06em;
+  }
+  footer strong { color: #3a7d44; }
+
+  @media (max-width: 640px) {
+    .header, .section-title { padding-left: 20px; padding-right: 20px; }
+    .grid { padding: 0 20px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-tag">LW-2-A &nbsp;·&nbsp; Image Classification Project</div>
+  <h1>Plant Species<br>Image Classification</h1>
+  <p>A curated dataset of tropical and ornamental plant species used to train and evaluate a deep learning image classification model.</p>
+  <div class="header-meta">
+    <div class="meta-item"><span class="meta-val">20</span><span class="meta-label">Species</span></div>
+    <div class="meta-item"><span class="meta-val">CNN</span><span class="meta-label">Model Type</span></div>
+    <div class="meta-item"><span class="meta-val">Tropical</span><span class="meta-label">Focus</span></div>
+  </div>
+</header>
+
+<div class="section-title">
+  <h2>B. Plant Species Catalog</h2>
+  <hr>
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/7c333b0d-e5ad-4fae-8e87-a3a92b9af517" alt="Dwarf Snake Plant" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 01</div>
+      <div class="card-common">Dwarf Snake Plant</div>
+      <div class="card-sci">Sansevieria trifasciata 'Hahnii'</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A compact 6–8 inch rosette succulent — drought-tolerant, thrives in low light, and prized for air-purifying qualities with minimal care.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/2f720a3e-443a-43ed-a017-e740d8f4ec06" alt="Hawaiian Sunshine Dracaena" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 02</div>
+      <div class="card-common">Hawaiian Sunshine Dracaena</div>
+      <div class="card-sci">Dracaena fragrans 'Hawaiian Sunshine'</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A vibrant upright tropical reaching 3–4 ft indoors, with bold yellow-green striped leaves that tolerate low light and brighten any room.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/a20ac2a1-d0a4-42d1-bec4-9af6ee7a50cb" alt="Chinese Croton" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 03</div>
+      <div class="card-common">Chinese Croton</div>
+      <div class="card-sci">Codiaeum variegatum</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A bold tropical shrub with leathery, multi-colored leaves in yellow, orange, red, and purple — a dramatic ornamental for bright humid spaces.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/55de5579-4490-48e4-be43-d11db15ccb82" alt="Star of Bethlehem" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 04</div>
+      <div class="card-common">Star of Bethlehem</div>
+      <div class="card-sci">Hippobroma longiflora</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A delicate perennial with year-round white star-shaped blooms — beautiful yet highly toxic throughout and invasive across tropical regions.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/17b93055-4b50-4b3e-92cd-da8dac6dfa54" alt="Kaffir Lime Tree" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 05</div>
+      <div class="card-common">Kaffir Lime Tree</div>
+      <div class="card-sci">Citrus hystrix</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A tropical citrus tree with distinctive double-lobed aromatic leaves, essential to Southeast Asian cuisine for their intensely flavored zest.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/d4dfdab9-ebb0-46a7-8cde-811d2b396bf4" alt="Birdsnest Anthurium" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 06</div>
+      <div class="card-common">Birdsnest Anthurium</div>
+      <div class="card-sci">Anthurium jenmanii</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A striking tropical with 2–3 ft glossy strap-like leaves rising in a bird's nest rosette, grown entirely for its dramatic architectural foliage.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/f6b6e1a2-9d10-4cf3-b8ea-7cfa24ea0307" alt="Snow Alternanthera" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 07</div>
+      <div class="card-common">Snow Alternanthera</div>
+      <div class="card-sci">Alternanthera ficoidea 'Snow'</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A low-growing 6–12 inch foliage plant densely packed with white-and-green variegated leaves, ideal for borders and tropical bedding displays.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/68d263f0-2053-46c8-96b3-56da2ea5b9cb" alt="Golden Spider Plant" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 08</div>
+      <div class="card-common">Golden Spider Plant</div>
+      <div class="card-sci">Chlorophytum comosum 'Vittatum'</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A fountain-like houseplant with yellow-striped arching leaves that spawn cascading baby plantlets — adaptable, foolproof, and a proven air purifier.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/9c3268ac-b851-4d9d-ae78-5c0fd6f2e05b" alt="Wedelia" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 09</div>
+      <div class="card-common">Wedelia (Singapore Daisy)</div>
+      <div class="card-sci">Sphagneticola trilobata</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A fast-creeping ground cover with year-round yellow daisy flowers — popular for erosion control but invasive across many tropical regions.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/37db0d45-1639-4a1b-97e2-c542a0051c6e" alt="Cast Iron Plant" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 10</div>
+      <div class="card-common">Cast Iron Plant</div>
+      <div class="card-sci">Aspidistra elatior</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A nearly indestructible foliage plant with tall glossy dark-green leaves, thriving in deep shade and neglect that would kill most houseplants.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/51862dc2-653c-4db7-ac0e-97955fa3193c" alt="English Ivy" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 11</div>
+      <div class="card-common">English Ivy</div>
+      <div class="card-sci">Hedera helix</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">An evergreen climbing vine with classic lobed leaves that covers walls or cascades indoors — valued yet invasive in many natural areas.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/d6299fb2-ba2a-4309-b13f-33c27ab7dfb6" alt="Scarlet Sage" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 12</div>
+      <div class="card-common">Scarlet Sage</div>
+      <div class="card-sci">Salvia splendens</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A vibrant flowering plant with brilliant red spikes blooming all summer, beloved for bold color in beds and its irresistible appeal to hummingbirds.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/17593554-818f-41fd-b51f-750d75318767" alt="Satsuki Azalea" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 13</div>
+      <div class="card-common">Satsuki Azalea</div>
+      <div class="card-sci">Rhododendron indicum</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A compact evergreen shrub famous for spectacular spring blooms in pink, red, or white — a staple of Japanese gardens and a prized bonsai subject.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/70b508b4-c1e3-40e8-a92f-cbc6d62357ce" alt="African Marigold" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 14</div>
+      <div class="card-common">African Marigold</div>
+      <div class="card-sci">Tagetes erecta</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A prolific annual with large pompom blooms in bold yellow and orange — showy, long-blooming, and naturally effective at repelling garden pests.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/28392642-5d68-4147-b96b-604fb22369f7" alt="Madagascar Periwinkle" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 15</div>
+      <div class="card-common">Madagascar Periwinkle</div>
+      <div class="card-sci">Catharanthus roseus</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A heat-loving, continuously blooming bedding plant containing medicinal alkaloids used in cancer treatment — reliable, low-maintenance, and vibrantly colorful.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/9876546e-2f98-4eb7-bf9c-4ddf5c973191" alt="Wild White Petunia" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 16</div>
+      <div class="card-common">Wild White Petunia</div>
+      <div class="card-sci">Petunia axillaris</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A South American native with fragrant white trumpet blooms opening at dusk to attract moths — the key ancestor of all modern hybrid petunias.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/fe92d73d-1d5c-4392-a185-462d88c32805" alt="Floss Flower" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 17</div>
+      <div class="card-common">Floss Flower</div>
+      <div class="card-sci">Ageratum houstonianum</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A compact annual with fluffy powder-puff clusters in rare true blue, blooming spring through fall and attracting pollinators in borders and edging.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/b3781aa8-73c4-4159-b127-dd30e79fea75" alt="Bunny Ears Cactus" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 18</div>
+      <div class="card-common">Bunny Ears Cactus</div>
+      <div class="card-sci">Opuntia microdasys</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A Mexican cactus with flat oval pads dotted in golden glochids mimicking bunny ears — charming yet deceptively sharp, perfect for xeriscaping.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/040c9a92-f391-40b6-88e7-21d1f12e2b96" alt="Variegated Snake Plant" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 19</div>
+      <div class="card-common">Variegated Snake Plant</div>
+      <div class="card-sci">Dracaena trifasciata 'Laurentii'</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A virtually indestructible upright succulent with yellow-edged sword leaves reaching 2–4 ft — one of the world's most forgiving and adaptable houseplants.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="https://github.com/user-attachments/assets/31e3e8d1-eedb-4931-a932-e88b525fee24" alt="Firecracker Plant" loading="lazy"></div>
+    <div class="card-body">
+      <div class="card-num">Species 20</div>
+      <div class="card-common">Firecracker Plant</div>
+      <div class="card-sci">Russelia equisetiformis</div>
+      <div class="divider-line"></div>
+      <p class="card-desc">A graceful cascading shrub with fountain-like rush stems and year-round tubular red blooms that are irresistible to hummingbirds and butterflies.</p>
+    </div>
+  </div>
 
 </div>
 
-
----
-
-### 2. Hawaiian Sunshine Dracaena
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/2f720a3e-443a-43ed-a017-e740d8f4ec06"" alt="Petunia_Axillaris_27" width="500">
-</p>
-<div align="center">
-
-**Common name:** Hawaiian Sunshine Dracaena, Sunshine Dracaena
-
-**Scientific name:** *Dracaena fragrans* 'Hawaiian Sunshine'
-
-**Description of the plant species:**
-A vibrant tropical plant featuring broad, sword-shaped leaves with striking yellow and lime-green striping along the edges and darker green centers. It grows in an upright, compact form, typically reaching 3-4 feet indoors. This cultivar is prized for its bright, cheerful appearance and ability to tolerate low light conditions. It's a popular indoor ornamental plant that's easy to care for, requiring moderate watering and thriving in indirect sunlight. The plant helps purify indoor air and adds a tropical aesthetic to any space.
-
-
-</div>
-
----
-
-### 3. Chinese Croton
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/a20ac2a1-d0a4-42d1-bec4-9af6ee7a50cb" alt="Petunia_Axillaris_27" width="500">
-</p>
-<div align="center">
-
-**Common name:** Chinese Croton, Garden Croton, Variegated Laurel
-
-**Scientific name:** *Codiaeum variegatum*
-
-**Description of the plant species:**
-A colorful tropical shrub known for its stunning, leathery leaves that display a vibrant mix of colors including yellow, orange, red, green, and purple. The leaves vary in shape from broad and oval to narrow and twisted, depending on the variety. It typically grows 3-6 feet tall indoors and is prized as an ornamental plant for its bold, multi-colored foliage. Chinese Croton thrives in bright, indirect light and warm, humid conditions. It requires regular watering and is sensitive to cold temperatures. This eye-catching plant is popular for adding dramatic color to indoor spaces and tropical gardens.
-
-</div>
-
----
-
-
-
-### 4. Hippobroma Longiflora
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/55de5579-4490-48e4-be43-d11db15ccb82" alt="Petunia_Axillaris_27" width="500">
-</p>
-<div align="center">
-
-
-**Common name:** Star of Bethlehem, Madamfate, Horse Poison
-
-**Scientific name:** *Hippobroma longiflora* (synonym: *Isotoma longiflora*)
-
-**Description of the plant species:**
-A small herbaceous perennial plant with delicate white star-shaped flowers featuring five narrow petals and a yellow center. It grows 1-2 feet tall with slender stems and narrow, lance-shaped leaves with toothed edges. The plant produces attractive white blooms year-round in tropical climates. Despite its beauty, all parts of the plant are highly toxic and contain poisonous latex sap. It's commonly found in disturbed areas, roadsides, and gardens in tropical and subtropical regions. The plant is considered invasive in some areas due to its ability to spread rapidly through seeds.
-
-</div>
----
-
-### 5.Kaffir Lime Tree
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/17b93055-4b50-4b3e-92cd-da8dac6dfa54" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Kaffir Lime, Makrut Lime, Thai Lime
-
-
-**Scientific name:** *Citrus hystrix*
-
-**Description of the plant species:**
-A tropical citrus tree known for its distinctive double-lobed leaves and bumpy, dark green fruit. It typically grows 6-10 feet tall and is widely cultivated for its aromatic leaves and zest, which are essential ingredients in Southeast Asian cuisine, particularly Thai and Indonesian dishes. The leaves have a unique hourglass shape and release a strong, citrusy fragrance when crushed. The fruit has a wrinkled, warty skin and contains little juice but provides intensely flavored zest. The tree thrives in warm, humid climates and is often grown in containers in cooler regions. Both the leaves and fruit rind are prized for their distinctive lime flavor with floral notes.
-
-</div>
-
----
-
-### 6.Anthurium Jenmanii
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d4dfdab9-ebb0-46a7-8cde-811d2b396bf4" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Birdsnest Anthurium, Strap Leaf Anthurium
-
-**Scientific name:** *Anthurium jenmanii*
-
-**Description of the plant species:**
-A striking tropical plant characterized by its large, elongated, strap-like leaves that grow upward in a rosette formation resembling a bird's nest. The glossy, dark green leaves can reach 2-3 feet in length and have prominent veining. Unlike typical anthuriums with heart-shaped leaves and colorful spathes, this species is grown primarily for its dramatic foliage. It produces small, inconspicuous purple or green flower spikes. The plant thrives in warm, humid environments with bright, indirect light and well-draining soil. It's popular as an ornamental houseplant or in tropical gardens, valued for its architectural appearance and air-purifying qualities.
-
-</div>
-
----
-
-### 7.Alternanthera Ficoidea Snow
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/f6b6e1a2-9d10-4cf3-b8ea-7cfa24ea0307" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Snow Alternanthera, Joseph's Coat, Calico Plant
-
-**Scientific name:** *Alternanthera ficoidea* 'Snow' (also known as *Alternanthera bettzickiana* 'Snow')
-
-**Description of the plant species:**
-A compact, colorful foliage plant with striking variegated leaves featuring white, cream, and green patterns with occasional pink tinges. The small, oval leaves grow densely on low-growing stems, creating a bushy appearance that typically reaches 6-12 inches in height. This cultivar is particularly prized for its bright, snow-white variegation that adds contrast to gardens and landscapes. It thrives in full sun to partial shade and warm climates, often used as a bedding plant, border edging, or in containers. Regular pruning encourages bushier growth and more vibrant coloration. The plant is heat-tolerant and performs well in tropical and subtropical regions.
-
-</div>
-
----
-
-
-### 8.Golden Spider Plant
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/68d263f0-2053-46c8-96b3-56da2ea5b9cb" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Golden Spider Plant, Variegated Spider Plant
-
-**Scientific name:** *Chlorophytum comosum* 'Vittatum' or *Chlorophytum comosum* 'Variegatum'
-
-**Description of the plant species:**
-A popular houseplant with long, arching leaves featuring bright yellow or cream stripes down the center with green margins. It grows in a fountain-like clump, typically reaching 12-18 inches in height with leaves that cascade gracefully. The plant produces long stems with small white flowers that develop into baby plantlets (spiderettes), which can be easily propagated. It's one of the easiest indoor plants to grow, thriving in various light conditions from bright indirect light to partial shade. Golden Spider Plant is highly valued for its air-purifying abilities, low maintenance requirements, and attractive variegated foliage that brightens any indoor space.
-
-</div>
-
----
-
-### 9.Sphagneticola Trilobata
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/9c3268ac-b851-4d9d-ae78-5c0fd6f2e05b" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Wedelia, Singapore Daisy, Trailing Daisy, Creeping Oxeye
-
-**Scientific name:** *Sphagneticola trilobata* (formerly *Wedelia trilobata*)
-
-**Description of the plant species:**
-A fast-growing, creeping perennial ground cover with bright yellow daisy-like flowers and glossy, dark green leaves. The leaves are typically three-lobed with serrated edges and grow along trailing stems that can spread rapidly across the ground or climb over structures. The plant produces cheerful yellow flowers year-round in tropical climates, each flower measuring about 1 inch in diameter. It grows vigorously, forming dense mats that can reach 1-2 feet in height. While popular as an ornamental ground cover for erosion control and landscaping, it's considered highly invasive in many tropical and subtropical regions due to its aggressive spreading habit. The plant thrives in full sun to partial shade and tolerates various soil conditions.
-
-</div>
-
----
-
-### 10.Aspidistra Elatior (cast iron plant)
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/37db0d45-1639-4a1b-97e2-c542a0051c6e" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Cast Iron Plant, Bar Room Plant
-
-**Scientific name:** *Aspidistra elatior*
-
-**Description of the plant species:**
-An extremely hardy foliage plant with long, dark green, lance-shaped leaves that grow directly from the soil on individual stems. The glossy leaves can reach 2 feet in length and form dense, upright clumps. True to its common name, the Cast Iron Plant is nearly indestructible and can tolerate neglect, low light, irregular watering, temperature fluctuations, and poor soil conditions. It grows slowly, typically reaching 2-3 feet in height indoors. The plant occasionally produces small, inconspicuous purple flowers at soil level. It's a popular choice for difficult indoor locations, shaded gardens, and beginner plant enthusiasts due to its exceptional tolerance and minimal care requirements.
-
-</div>
----
-
-
-### 11.Hedera Helix
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/51862dc2-653c-4db7-ac0e-97955fa3193c" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** English Ivy, Common Ivy
-
-**Scientific name:** *Hedera helix*
-
-**Description of the plant species:**
-A versatile evergreen climbing vine with distinctive lobed leaves, typically featuring three to five pointed lobes in a classic ivy shape. The glossy, dark green leaves often display lighter green or white veining, and variegated cultivars are widely available. It can grow as a climbing vine using aerial rootlets to attach to surfaces, or as a trailing ground cover, reaching lengths of 50-100 feet if left unpruned. English Ivy thrives in shade to partial sun and is valued for its ability to cover walls, fences, and trellises. It's popular as both an indoor hanging plant and outdoor ornamental, known for its air-purifying qualities. However, it's considered invasive in many regions due to its aggressive growth and ability to smother native vegetation.
-
-</div>
----
-
-### 12.Salvia Splendens (scarlet sage)
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d6299fb2-ba2a-4309-b13f-33c27ab7dfb6" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Scarlet Sage, Red Salvia
-
-**Scientific name:** *Salvia splendens*
-
-**Description of the plant species:**
-A vibrant flowering plant known for its brilliant red flower spikes that bloom profusely throughout the growing season. The plant features bright green, heart-shaped leaves with serrated edges and grows in an upright, bushy form typically reaching 1-3 feet tall. The tubular flowers are arranged in dense spikes and attract hummingbirds, butterflies, and bees. While red is the most common color, cultivars are available in pink, purple, salmon, and white. Scarlet Sage thrives in full sun to partial shade and prefers warm weather, making it a popular choice for summer bedding displays, borders, and container gardens. Though often grown as an annual in cooler climates, it's a perennial in tropical and subtropical regions.
-
-</div>
----
-
-### 13.Rhododendron Indicum
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/17593554-818f-41fd-b51f-750d75318767" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Satsuki Azalea, Indian Azalea
-
-**Scientific name:** *Rhododendron indicum*
-
-**Description of the plant species:**
-A compact evergreen flowering shrub renowned for its spectacular spring blooms in shades of pink, red, white, or purple. The plant features small, glossy, dark green leaves and produces funnel-shaped flowers that often cover the entire plant during peak flowering season. It typically grows 2-4 feet tall with a dense, mounded form. Satsuki Azalea is particularly popular in Japanese gardens and bonsai cultivation due to its elegant growth habit and profuse flowering. The plant prefers acidic, well-draining soil and thrives in partial shade with consistent moisture. It's valued for its ornamental beauty, compact size, and ability to be shaped through pruning, making it ideal for small gardens, containers, and landscape borders.
-
-</div>
-
----
-
-### 14.Tagetes Erecta (African Marigold)
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/70b508b4-c1e3-40e8-a92f-cbc6d62357ce" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** African Marigold, Aztec Marigold, Mexican Marigold
-
-**Scientific name:** *Tagetes erecta*
-
-**Description of the plant species:**
-A popular annual flowering plant known for its large, showy pompom-like blooms in vibrant shades of yellow, orange, and gold. The flowers can reach 3-5 inches in diameter and sit atop sturdy, upright stems with dark green, finely divided, aromatic foliage. The plant typically grows 1-4 feet tall depending on the variety, with a bushy, upright habit. African Marigold blooms prolifically from spring through fall and thrives in full sun with well-draining soil. Despite its common name, the plant is native to Mexico and Central America. It's widely used in gardens, borders, and containers for its bright colors and long blooming season. The flowers are also used in traditional celebrations, garlands, and have pest-repelling properties in companion planting.
-
-</div>
-
----
-
-### 15.Catharanthus Roseus 
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/28392642-5d68-4147-b96b-604fb22369f7" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Madagascar Periwinkle, Vinca, Rosy Periwinkle
-
-
-**Scientific name:** *Catharanthus roseus*
-
-**Description of the plant species:**
-A compact, bushy flowering plant with glossy, dark green oval leaves and charming five-petaled flowers in shades of pink, white, red, or purple, often with contrasting centers. The plant typically grows 1-2 feet tall with a spreading habit and blooms continuously throughout the warm season. Madagascar Periwinkle is extremely heat and drought-tolerant, thriving in full sun and well-draining soil. It's popular as a bedding plant, border edging, and container plant due to its low maintenance requirements and reliable flowering. Originally from Madagascar, this plant has significant medicinal importance as it contains alkaloids used in cancer treatment medications. It's often grown as an annual in cooler climates but is perennial in tropical and subtropical regions.
-
-</div>
-
----
-
-
-### 16.Petunia Axillaris
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/9876546e-2f98-4eb7-bf9c-4ddf5c973191" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Wild White Petunia, Large White Petunia
-
-**Scientific name:** *Petunia axillaris*
-
-**Description of the plant species:**
-A trailing flowering plant known for its fragrant, large white trumpet-shaped blooms that open in the evening and emit a sweet scent to attract night-flying pollinators. The flowers can reach 2-3 inches in length with five fused petals forming a distinctive tube. The plant features sticky, hairy stems and oval-shaped leaves, growing 1-2 feet tall with a sprawling habit. Native to South America, Petunia axillaris is one of the parent species of modern hybrid garden petunias. It thrives in full sun to partial shade with well-draining soil and blooms prolifically during warm months. The plant is valued for its ornamental appeal, evening fragrance, and historical significance in petunia breeding programs.
-
-</div>
----
-
-
-### 17.Ageratum Houstonianum
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/fe92d73d-1d5c-4392-a185-462d88c32805" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Floss Flower, Blue Mink, Blueweed
-
-**Scientific name:** *Ageratum houstonianum*
-
-**Description of the plant species:**
-A compact annual flowering plant producing fluffy, powder-puff-like flower clusters in shades of blue, purple, pink, or white. The soft, fuzzy blooms are composed of tiny tubular flowers that form dense, rounded heads atop bushy plants. It typically grows 6-18 inches tall with heart-shaped, slightly hairy leaves. Ageratum blooms continuously from spring through fall, thriving in full sun to partial shade with moist, well-draining soil. The plant is popular in borders, edging, containers, and mass plantings due to its long flowering period and attractive color. It's especially valued for providing true blue color in gardens, which is relatively rare among flowering annuals. The flowers attract butterflies and other pollinators while being deer-resistant.
-
-</div>
----
-
-
-### 18.Opuntia Microdasys
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/b3781aa8-73c4-4159-b127-dd30e79fea75" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Bunny Ears Cactus, Angel's Wings, Polka Dot Cactus
-
-**Scientific name:** *Opuntia microdasys*
-
-**Description of the plant species:**
-A distinctive cactus with flat, oval pads that grow in pairs resembling bunny ears. The bright green pads are covered with evenly spaced clusters (areoles) of tiny golden-yellow or white hair-like spines called glochids, creating a polka-dot appearance. The plant typically grows 1-2 feet tall with a branching structure. Despite its cute, fuzzy appearance, the glochids are barbed and can easily detach and irritate skin. It occasionally produces yellow or pale orange flowers in spring, followed by small purple fruits. Bunny Ears Cactus is native to Mexico and thrives in full sun with minimal watering, making it an excellent choice for xeriscaping, rock gardens, and indoor succulent collections. It's popular for its unique ornamental appearance and low maintenance requirements.
-
-</div>
-
----
-
-
-### 19.Dracaena  Trifasciata Laurentii 
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/040c9a92-f391-40b6-88e7-21d1f12e2b96" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-<div align="center">
-
-**Common name:** Variegated Snake Plant, Mother-in-Law's Tongue, Golden-Edged Snake Plant
-
-**Scientific name:** *Dracaena trifasciata* 'Laurentii' (formerly *Sansevieria trifasciata* 'Laurentii')
-
-**Description of the plant species:**
-A striking upright succulent plant featuring tall, sword-shaped leaves with distinctive bright yellow margins bordering dark and light green horizontal banding patterns in the center. The leaves grow stiffly upright and can reach 2-4 feet in height, forming dense clumps over time. This popular cultivar is widely recognized as one of the most resilient and adaptable houseplants available. It thrives in a wide range of light conditions from low light to bright indirect sun and requires minimal watering due to its drought-tolerant nature. Dracaena trifasciata 'Laurentii' is highly valued for its air-purifying qualities, architectural appearance, and virtually indestructible nature. It's an ideal choice for beginner plant enthusiasts and adds a bold, tropical aesthetic to any indoor or outdoor space.
-
-</div>
-
-
-
-
-### 20.Russelia Equisetiformis 
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/31e3e8d1-eedb-4931-a932-e88b525fee24" alt="Petunia_Axillaris_27" width="500">
-</p>
-
-
-<div align="center">
-
-**Common name:** Firecracker Plant, Coral Plant, Fountain Plant
-
-**Scientific name:** *Russelia equisetiformis*
-
-**Description of the plant species:**
-A graceful, cascading shrub with thin, rush-like green stems that create a fountain-like appearance and produce abundant tubular red or coral-colored flowers. The nearly leafless stems are bright green and photosynthetic, giving the plant a delicate, airy texture. It typically grows 3-5 feet tall and wide with an arching, weeping habit. The small, tubular flowers bloom profusely year-round in warm climates, attracting hummingbirds and butterflies. Firecracker Plant thrives in full sun to partial shade with well-draining soil and is highly drought-tolerant once established. It's popular for hanging baskets, containers, borders, and as a cascading accent plant in landscapes. The plant is native to Mexico and is valued for its continuous colorful display and minimal maintenance requirements.
-
-</div>
-
-
-
-
-
-
+<footer>
+  <strong>LW-2-A</strong> &nbsp;·&nbsp; Plant Species Image Classification &nbsp;·&nbsp; 20 Species Dataset
+</footer>
+
+</body>
+</html>

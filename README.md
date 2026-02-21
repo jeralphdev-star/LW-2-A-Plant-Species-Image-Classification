@@ -46,9 +46,9 @@ This project builds an image classification model to identify tropical and ornam
 
 ---
 
-### 4. Star of Bethlehem
+### 4. Hippobroma Longiflora
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/55de5579-4490-48e4-be43-d11db15ccb82" width="350">
+  <img src="https://github.com/user-attachments/assets/7d3b89be-eded-462c-aee1-6871141df778" width="350">
 </p>
 
 | Field | Details |

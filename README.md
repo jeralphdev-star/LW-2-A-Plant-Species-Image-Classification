@@ -35,7 +35,7 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 3. Chinese Croton
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a20ac2a1-d0a4-42d1-bec4-9af6ee7a50cb" width="350">
+  <img src="https://github.com/user-attachments/assets/617e6119-158e-4a1f-abe4-7b633c98dd5a" width="350">
 </p>
 
 | Field | Details |
@@ -61,8 +61,9 @@ This project builds an image classification model to identify tropical and ornam
 
 ### 5. Kaffir Lime Tree
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/17b93055-4b50-4b3e-92cd-da8dac6dfa54" width="350">
+  <img src="https://github.com/user-attachments/assets/b8f8eb94-5694-4654-8df8-58737605a8fa" width="350">
 </p>
+
 
 | Field | Details |
 |---|---|

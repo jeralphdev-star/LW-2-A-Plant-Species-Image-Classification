@@ -400,25 +400,25 @@ Below are 10 testing screenshots from the Teachable Machine Preview section, eac
 
 ### Test 6 — Satsuki Azalea
 <p align="center">
-  <img src="screenshots/testing/Test_6_-_Satsuki_Azalea_Model_Testing_part_1.png" width="600">
+  <img src="screenshots/testing/Test_6_-_Satsuki_Azalea_Model_Testing_part_1_png.png" width="600">
 </p>
 <p align="center">
-  <img src="screenshots/testing/Test_6_-_Satsuki_Azalea_Model_Testing_part_2.png" width="600">
+  <img src="screenshots/testing/Test_6_-_Satsuki_Azalea_Model_Testing_part_2_png.png" width="600">
 </p>
 
-**Result:** ⚠️ Predicted as Madagascar Periwinkle — **82%** (Satsuki Azalea: 18%)
+**Result:** ✅ Satsuki Azalea — **99% Confidence**
 
 ---
 
-### Test 7 — Firecracker
+### Test 7 — Scarlet Sage
 <p align="center">
-  <img src="screenshots/testing/Test_7_-_Firecracker_model_testing_part_1.png" width="600">
+  <img src="screenshots/testing/Test_7_-_Scarlet_Sage_model_testing_part_1.png" width="600">
 </p>
 <p align="center">
-  <img src="screenshots/testing/Test_7_-_Firecracker_model_testing_part_2.png" width="600">
+  <img src="screenshots/testing/Test_7_-_Scarlet_Sage_model_testing_part_2.png" width="600">
 </p>
 
-**Result:** ✅ Firecracker — **100% Confidence**
+**Result:** ✅ Scarlet Sage — **100% Confidence**
 
 ---
 

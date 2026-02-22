@@ -470,10 +470,14 @@ Below are 10 testing screenshots from the Teachable Machine Preview section, eac
 *The most commonly misclassified plant in my testing was the Satsuki Azalea. When I tested it, the model predicted it as Madagascar Periwinkle with 82% confidence, while Satsuki Azalea only got 18%. I think this happened because both plants share a similar pink flower color, which may have confused the model. Even though their leaf shapes and plant structures are quite different, the model focused more on the color of the flowers rather than the overall shape and form of the plant. This suggests that the model needs more diverse images of both species taken from different angles to better distinguish between them.*
 
 ### 3. How did changing the epochs, batch size, or learning rate affect the training results?
-*(Write your answer here)*
+*During training, I experimented with changing the number of epochs from 50 to 100. I noticed that increasing the epochs improved the model's accuracy because the model had more opportunities to learn the patterns and features of each plant species. With 100 epochs, the model was trained more thoroughly compared to 50 epochs, resulting in better overall accuracy. However, I kept the batch size at 16 and the learning rate at 0.001 as these are standard values that provide stable and consistent training results. Setting the learning rate too high can cause the model to learn too fast and miss important details, while setting it too low can make training very slow.*
 
 ### 4. What challenges did you encounter during dataset collection and labeling?
-*(Write your answer here)*
+*One of the biggest challenges I encountered during dataset collection was finding good quality images from YouTube videos. Some videos featured people presenting the plant, which made it difficult to get clear and focused images of the plant itself. Including those kinds of images could negatively affect the model's accuracy since the focus was not entirely on the plant.
+Another challenge was completing the minimum of 250 images per species. Some YouTube videos were very short reels that only lasted a few seconds, meaning I could only extract a limited number of frames from each video. Because of this, I had to find many different short videos of the same plant just to reach the required 250 images per class, which was very time consuming.*
 
 ### 5. If you were to improve your model, what specific changes would you make and why?
-*(Write your answer here)*
+*Based on my experience, not all of my plant species achieved 100% accuracy during testing. While achieving perfect accuracy may not always be possible, I believe there are several things I can do to improve the model's performance.
+First, I would collect more images per class, especially for species that had lower accuracy like Madagascar Periwinkle and Satsuki Azalea. More images means the model has more examples to learn from, which generally leads to better accuracy.
+Second, I would increase the number of epochs beyond 100 to give the model more time to learn the differences between visually similar species.
+Lastly, I would collect images from different angles, lighting conditions, and backgrounds. Having more diverse images would help the model become better at recognizing plants in real world conditions, not just in controlled or ideal photo settings.*

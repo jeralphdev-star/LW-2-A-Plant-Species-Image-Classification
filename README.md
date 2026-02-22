@@ -464,7 +464,7 @@ Below are 10 testing screenshots from the Teachable Machine Preview section, eac
 ## F. Reflection Questions
 
 ### 1. How did the number of images per class affect your model's accuracy?
-*(Write your answer here)*
+*Based on my experience, having more images per class generally leads to better accuracy. A good example is the Chinese Croton, which had around 1,000 images in its dataset and achieved 100% accuracy during testing. On the other hand, Madagascar Periwinkle had around 500 images and only reached 82% accuracy during testing. This shows that the more diverse and plentiful the training images are, the better the model becomes at recognizing that specific plant species.*
 
 ### 2. Which plant species were most commonly misclassified and why?
 *(Write your answer here)*

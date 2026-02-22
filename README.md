@@ -1,7 +1,9 @@
 # LW-2-A — Plant Species Image Classification
 
 ## A. Project Overview
-This project builds an image classification model to identify tropical and ornamental plant species using deep learning (CNN). The model was trained using Google Teachable Machine and is capable of classifying 20 different plant species based on image input. The purpose of this model is to demonstrate how machine learning can be applied to botanical image recognition, helping users identify plant species quickly and accurately through visual data.
+The goal of this research is to create an image classification model that can identify 20 distinct species of decorative and tropical plants. We gathered more than 5,000 plant photos using Google Teachable Machine, and we trained a model to distinguish between different species using visual characteristics including bloom appearance, leaf shape, and color.
+
+The objective is straightforward: to expedite and simplify plant identification. This device can identify the type of plant in a shot in a matter of seconds, eliminating the need to manually search for it. For students, gardeners, and anybody else interested in the plants around them, it's a useful illustration of how machine learning may be applied in daily life.
 
 ---
 

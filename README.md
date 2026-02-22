@@ -467,7 +467,7 @@ Below are 10 testing screenshots from the Teachable Machine Preview section, eac
 *Based on my experience, having more images per class generally leads to better accuracy. A good example is the Chinese Croton, which had around 1,000 images in its dataset and achieved 100% accuracy during testing. On the other hand, Madagascar Periwinkle had around 500 images and only reached 82% accuracy during testing. This shows that the more diverse and plentiful the training images are, the better the model becomes at recognizing that specific plant species.*
 
 ### 2. Which plant species were most commonly misclassified and why?
-*(Write your answer here)*
+*The most commonly misclassified plant in my testing was the Satsuki Azalea. When I tested it, the model predicted it as Madagascar Periwinkle with 82% confidence, while Satsuki Azalea only got 18%. I think this happened because both plants share a similar pink flower color, which may have confused the model. Even though their leaf shapes and plant structures are quite different, the model focused more on the color of the flowers rather than the overall shape and form of the plant. This suggests that the model needs more diverse images of both species taken from different angles to better distinguish between them.*
 
 ### 3. How did changing the epochs, batch size, or learning rate affect the training results?
 *(Write your answer here)*

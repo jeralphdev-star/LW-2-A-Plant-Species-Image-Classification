@@ -1,7 +1,7 @@
 # LW-2-A — Plant Species Image Classification
 
 ## A. Project Overview
-This project builds an image classification model to identify tropical and ornamental plant species using deep learning (CNN).
+This project builds an image classification model to identify tropical and ornamental plant species using deep learning (CNN). The model was trained using Google Teachable Machine and is capable of classifying 20 different plant species based on image input. The purpose of this model is to demonstrate how machine learning can be applied to botanical image recognition, helping users identify plant species quickly and accurately through visual data.
 
 ---
 
@@ -20,7 +20,7 @@ This project builds an image classification model to identify tropical and ornam
 
 ---
 
-### 2. Dracaena ‘Hawaiian Sunshine
+### 2. Dracaena 'Hawaiian Sunshine'
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bb5935ea-a8ec-4466-bb08-e4930026996d" width="350">
 </p>
@@ -64,7 +64,6 @@ This project builds an image classification model to identify tropical and ornam
   <img src="https://github.com/user-attachments/assets/b8f8eb94-5694-4654-8df8-58737605a8fa" width="350">
 </p>
 
-
 | Field | Details |
 |---|---|
 | **Common Name** | Kaffir Lime, Makrut Lime, Thai Lime |
@@ -77,7 +76,6 @@ This project builds an image classification model to identify tropical and ornam
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5aa68741-c7bf-4788-a3b2-9cdd08ff9422" width="350">
 </p>
-
 
 | Field | Details |
 |---|---|
@@ -137,10 +135,9 @@ This project builds an image classification model to identify tropical and ornam
 | **Scientific Name** | *Aspidistra elatior* |
 | **Description** | A nearly indestructible foliage plant with tall glossy dark-green leaves, thriving in deep shade and neglect that would kill most houseplants. |
 
-
 ---
 
-### 11. Hedera helix
+### 11. Hedera Helix
 <p align="center">
   <img src="https://github.com/user-attachments/assets/54e96094-774b-4d41-9d49-7d6491cc25b5" width="350">
 </p>
@@ -165,7 +162,6 @@ This project builds an image classification model to identify tropical and ornam
 | **Description** | A vibrant flowering plant with brilliant red spikes blooming all summer, beloved for bold color in beds and its irresistible appeal to hummingbirds. |
 
 ---
-
 
 ### 13. Satsuki Azalea
 <p align="center">
@@ -198,7 +194,6 @@ This project builds an image classification model to identify tropical and ornam
   <img src="https://github.com/user-attachments/assets/5cd1aa0c-6af6-4d3b-a82c-42da92503850" width="350">
 </p>
 
-
 | Field | Details |
 |---|---|
 | **Common Name** | Madagascar Periwinkle, Vinca, Rosy Periwinkle |
@@ -212,7 +207,6 @@ This project builds an image classification model to identify tropical and ornam
   <img src="https://github.com/user-attachments/assets/829198a8-add9-4de4-b390-119893626bfb" width="350">
 </p>
 
-
 | Field | Details |
 |---|---|
 | **Common Name** | Wild White Petunia, Large White Petunia |
@@ -220,7 +214,6 @@ This project builds an image classification model to identify tropical and ornam
 | **Description** | A South American native with fragrant white trumpet blooms opening at dusk to attract moths — the key ancestor of all modern hybrid petunias. |
 
 ---
-
 
 ### 17. Floss Flower
 <p align="center">
@@ -238,7 +231,7 @@ This project builds an image classification model to identify tropical and ornam
 ### 18. Bunny Ears Cactus
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5d97471a-c9c2-4455-a19c-cb4083d1181f" width="350">
-
+</p>
 
 | Field | Details |
 |---|---|
@@ -253,7 +246,6 @@ This project builds an image classification model to identify tropical and ornam
   <img src="https://github.com/user-attachments/assets/466e7ff2-2a49-45ac-a530-b538c539a40d" width="350">
 </p>
 
-
 | Field | Details |
 |---|---|
 | **Common Name** | Variegated Snake Plant, Mother-in-Law's Tongue |
@@ -267,7 +259,6 @@ This project builds an image classification model to identify tropical and ornam
   <img src="https://github.com/user-attachments/assets/7930b038-0bc7-43dd-95c3-ca366ff606a3" width="350">
 </p>
 
-
 | Field | Details |
 |---|---|
 | **Common Name** | Firecracker Plant, Coral Plant, Fountain Plant |
@@ -276,24 +267,210 @@ This project builds an image classification model to identify tropical and ornam
 
 ---
 
+## C. Model Training Details
 
-### Reflection Questions:
+The model was trained using Google Teachable Machine with the following configuration:
 
-## Answer the following questions based on your experience:
+| Parameter | Value |
+|---|---|
+| **Epochs** | 100 |
+| **Batch Size** | 16 |
+| **Learning Rate** | 0.001 |
+| **Number of Classes** | 20 |
+| **Minimum Images per Class** | 250 |
+| **Total Dataset Size** | 5,000+ images |
 
- ### 1. How did the number of images per class affect your model’s accuracy?
-### answer: 
+**Training Settings Screenshot:**
+
+<p align="center">
+  <img src="screenshots/training/training_settings.png" width="600">
+</p>
+
+**Why these values were chosen:**
+- **Epochs (100):** Enough iterations to allow the model to learn patterns across all 20 classes without underfitting.
+- **Batch Size (16):** A moderate batch size that balances training speed and model stability.
+- **Learning Rate (0.001):** A standard learning rate that allows gradual and stable weight updates during training.
+
+---
+
+## D. Model Evaluation
+
+### Confusion Matrix
+<p align="center">
+  <img src="screenshots/evaluation/Cunfusion_Matrix.png" width="700">
+</p>
+
+### Accuracy Per Class
+<p align="center">
+  <img src="screenshots/evaluation/Accuracy_Per_Class.png" width="700">
+</p>
+<p align="center">
+  <img src="screenshots/evaluation/Accuracy_Per_Class_part_2.png" width="700">
+</p>
+
+### Overall Model Accuracy
+<p align="center">
+  <img src="screenshots/evaluation/Overall_Model_Accuracy.png" width="700">
+</p>
+
+### Accuracy Summary Table
+
+| Class | Accuracy | # Samples |
+|---|---|---|
+| Dwarf Snake Plant | 1.00 | 67 |
+| Dracaena 'Hawaiian Sunshine' | 0.98 | 55 |
+| Chinese Croton | 0.99 | 151 |
+| Hippobroma Longiflora | 1.00 | 71 |
+| Kaffir Lime Tree | 0.98 | 99 |
+| Anthurium Jenmanii | 1.00 | 61 |
+| Snow Alternanthera | 0.91 | 54 |
+| Golden Spider Plant | 1.00 | 167 |
+| Wedelia (Singapore Daisy) | 0.99 | 87 |
+| Cast Iron Plant | 0.98 | 90 |
+| Hedera Helix | 0.96 | 72 |
+| Scarlet Sage | 0.98 | 96 |
+| Satsuki Azalea | 0.95 | 65 |
+| African Marigold | 0.97 | 79 |
+| Madagascar Periwinkle | 0.94 | 79 |
+| Wild White Petunia | 0.95 | 88 |
+| Floss Flower | 0.99 | 92 |
+| Bunny Ears Cactus | 0.99 | 81 |
+| Variegated Snake Plant | 0.99 | 112 |
+| Firecracker Plant | 1.00 | 114 |
+
+---
+
+## E. Model Testing
+
+Below are 10 testing screenshots from the Teachable Machine Preview section, each showing the input image, predicted plant class, and confidence score.
+
+### Test 1 — Anthurium Jenmanii
+<p align="center">
+  <img src="screenshots/testing/Test_1_-_Anthurium_Jenmanii_model_testing_part1.png" width="600">
+</p>
+<p align="center">
+  <img src="screenshots/testing/Test_1_-_Anthurium_Jenmanii_model_testing_part2.png" width="600">
+</p>
+
+**Result:** ✅ Anthurium Jenmanii — **100% Confidence**
+
+---
+
+### Test 2 — Chinese Croton
+<p align="center">
+  <img src="screenshots/testing/Test_2_-Chinese_Croton_model_testing_part_1.png" width="600">
+</p>
+<p align="center">
+  <img src="screenshots/testing/Test_2_-_Chinese_Croton_model_testing_part_2.png" width="600">
+</p>
+
+**Result:** ✅ Chinese Croton — **100% Confidence**
+
+---
+
+### Test 3 — Dracaena 'Hawaiian Sunshine'
+<p align="center">
+  <img src="screenshots/testing/Test_3_-_Dracaena__Hawaiian_Sunshine_Model_Testing.png" width="600">
+</p>
+
+**Result:** ✅ Dracaena 'Hawaiian Sunshine' — **100% Confidence**
+
+---
+
+### Test 4 — Dwarf Snake Plant
+<p align="center">
+  <img src="screenshots/testing/Test_4_-_Dwarf_Snake_Plant_Model_Testing.png" width="600">
+</p>
+
+**Result:** ✅ Dwarf Snake Plant — **100% Confidence**
+
+---
+
+### Test 5 — Madagascar Periwinkle
+<p align="center">
+  <img src="screenshots/testing/Test_5_-_Madagascar_Periwinkle_model_testing_part_1.png" width="600">
+</p>
+<p align="center">
+  <img src="screenshots/testing/Test_5_-_Madagascar_Periwinkle_model_testing_part_2.png" width="600">
+</p>
+
+**Result:** ✅ Madagascar Periwinkle — **82% Confidence**
+
+---
+
+### Test 6 — Satsuki Azalea
+<p align="center">
+  <img src="screenshots/testing/Test_6_-_Satsuki_Azalea_Model_Testing_part_1.png" width="600">
+</p>
+<p align="center">
+  <img src="screenshots/testing/Test_6_-_Satsuki_Azalea_Model_Testing_part_2.png" width="600">
+</p>
+
+**Result:** ⚠️ Predicted as Madagascar Periwinkle — **82%** (Satsuki Azalea: 18%)
+
+---
+
+### Test 7 — Scarlet Sage
+<p align="center">
+  <img src="screenshots/testing/Test_7_-_Scarlet_Sage_model_testing_part_1.png" width="600">
+</p>
+<p align="center">
+  <img src="screenshots/testing/Test_7_-_Scarlet_Sage_model_testing_part_2.png" width="600">
+</p>
+
+**Result:** ✅ Scarlet Sage — **100% Confidence**
+
+---
+
+### Test 8 — Snow Alternanthera
+<p align="center">
+  <img src="screenshots/testing/Test_8_-_Snow_Alternanthera_model_testing_part1.png" width="600">
+</p>
+<p align="center">
+  <img src="screenshots/testing/Test_8_-_Snow_Alternanthera_model_testing_part2.png" width="600">
+</p>
+
+**Result:** ✅ Snow Alternanthera — **100% Confidence**
+
+---
+
+### Test 9 — Variegated Snake Plant
+<p align="center">
+  <img src="screenshots/testing/Test_9_-_Variageted_Snake_Plant_part1.png" width="600">
+</p>
+<p align="center">
+  <img src="screenshots/testing/Test_9_-_Variageted_Snake_Plant_part2.png" width="600">
+</p>
+
+**Result:** ✅ Variegated Snake Plant — **99% Confidence**
+
+---
+
+### Test 10 — Wedelia (Singapore Daisy)
+<p align="center">
+  <img src="screenshots/testing/Test_10_-_Wedelia_model_testing_part1.png" width="600">
+</p>
+<p align="center">
+  <img src="screenshots/testing/Test_10_-_wedelia_model_testing_part2.png" width="600">
+</p>
+
+**Result:** ✅ Wedelia (Singapore Daisy) — **100% Confidence**
+
+---
+
+## F. Reflection Questions
+
+### 1. How did the number of images per class affect your model's accuracy?
+*(Write your answer here)*
 
 ### 2. Which plant species were most commonly misclassified and why?
-### answer: 
+*(Write your answer here)*
 
 ### 3. How did changing the epochs, batch size, or learning rate affect the training results?
-### answer: 
+*(Write your answer here)*
 
 ### 4. What challenges did you encounter during dataset collection and labeling?
-### answer: 
+*(Write your answer here)*
 
 ### 5. If you were to improve your model, what specific changes would you make and why?
-### answer: 
-
-
+*(Write your answer here)*

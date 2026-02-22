@@ -410,12 +410,12 @@ Below are 10 testing screenshots from the Teachable Machine Preview section, eac
 
 ---
 
-### Test 7 — Scarlet Sage
+### Test 7 — Firecracker
 <p align="center">
-  <img src="screenshots/testing/Test_7_-_Scarlet_Sage_model_testing_part_1.png" width="600">
+  <img src="screenshots/testing/Test_7_-_Firecracker_model_testing_part_1.png" width="600">
 </p>
 <p align="center">
-  <img src="screenshots/testing/Test_7_-_Scarlet_Sage_model_testing_part_2.png" width="600">
+  <img src="screenshots/testing/Test_7_-_Firecracker_model_testing_part_2.png" width="600">
 </p>
 
 **Result:** ✅ Scarlet Sage — **100% Confidence**

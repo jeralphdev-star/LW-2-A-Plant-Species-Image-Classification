@@ -20,7 +20,7 @@ This project builds an image classification model to identify tropical and ornam
 
 ---
 
-### 2. Hawaiian Sunshine Dracaena
+### 2. Dracaena ‘Hawaiian Sunshine
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bb5935ea-a8ec-4466-bb08-e4930026996d" width="350">
 </p>

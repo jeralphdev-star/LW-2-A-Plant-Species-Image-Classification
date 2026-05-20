@@ -1,5 +1,6 @@
 # LW-2-A — Plant Species Image Classification
 
+ImageDataset Link: https://drive.google.com/drive/folders/1Jrnr5akTk2T-k3XaBnykuLdPLJ0dKXKe?usp=drive_link
 ## A. Project Overview
 The goal of this research is to create an image classification model that can identify 20 distinct species of decorative and tropical plants. We gathered more than 5,000 plant photos using Google Teachable Machine, and we trained a model to distinguish between different species using visual characteristics including bloom appearance, leaf shape, and color.
 
